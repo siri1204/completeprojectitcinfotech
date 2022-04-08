@@ -1,0 +1,20 @@
+.cont{
+   display: flex;
+    margin-left: 2px;
+    margin-right: 1px;
+    
+}
+.cont img{
+    height: 200px;
+    width: 250px;
+}
+button{
+    height: 50px;
+    width: 200px;
+    background-color: skyblue;
+    color: cornsilk;
+    border-radius: 6px;
+}
+h1{
+    color: black;
+}

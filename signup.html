@@ -1,0 +1,59 @@
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <link rel="stylesheet" href="Cssitc.css"></link>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+<body>
+  <form id= "siri">
+  <center>
+  <br></br>
+  <h1 style="font-weight:bold" >Sign up and start learning!!!</h1>
+  
+  <br></br>
+   <div class="input-group">
+      <span class="input-group-addon"><span class="glyphicon glyphicon-user"></span></span>
+      <input type="required" title="enter your full name " pattern="[A-Z]{1}[a-z]{20,30}"id="email" type="text" class="form-control" name="name" placeholder="Full Name">
+    </div>
+
+    <div class="input-group">
+      <span class="input-group-addon"><span class="glyphicon glyphicon-envelope"></span></span>
+      <input type="required" title="enter your email address" pattern = "[a-z]{20,30}[@]{1}[.com]{1}"id="emai" type="text" class="form-control" name="email" placeholder="Email">
+    </div>
+	
+	</div>
+    <div class="input-group">
+      <span class="input-group-addon"><i class="glyphicon glyphicon-lock"></i></span>
+      <input type="required" title ="create strong password" pattern ="[A-Z]{1,10}[a-z]{1,10}[@#$]{1}[0-9]{1,12}" id="password" type="password" class="form-control" name="password" placeholder="create password">
+    </div>
+    <div class="input-group">
+      <span class="input-group-addon"><i class="glyphicon glyphicon-lock"></i></span>
+      <input type="required" title="re-enter the password" id="password" type="password" class="form-control" name="passs" placeholder="Re-Enter Password" onblur ="geno()">
+    </div>
+	<button onclick ="signUp()" type="button" class="btn btn-primary">SIGN UP</button>
+	<BR></BR>
+	<h4> All Ready have an account??<A href="Loginpage.html"><H3 style="font-weight:bold" >LOGIN</H2></a>
+	</center>
+    <br></br>
+	</form>
+	<script>
+	function signUp()
+	{
+		var gen = confirm("are you want to login")
+		if(gen)
+		{
+			window.open("Loginpage.html")
+		}
+		else
+		{
+			window.open("signup.html")
+		}
+		
+	}
+	</script>
+	</body>
+	</html>
